@@ -3,7 +3,7 @@ import Product from "../Product";
 import "./style.css";
 
 type Props = {
-  products: ProductType[];
+  products: ProductType[] | null;
 };
 
 function ProductList({ products }: Props) {
@@ -22,3 +22,5 @@ function ProductList({ products }: Props) {
 }
 
 export default ProductList;
+
+

@@ -11,7 +11,7 @@ const useApp = () => {
 
   const init = React.useCallback(() => {
     setIsLoading(true);
-    getAll((products) => {
+    getAll((products: Product[]) => {
       setProducts(products);
       setIsLoading(false);
     }).catch((err) => {
